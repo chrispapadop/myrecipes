@@ -25,10 +25,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring', group: development
+#gem 'spring', group: :development
 
 # Access an IRB console on exception pages or by using <%= console %> in views
-gem 'web-console', '~> 2.0', group: :development
+#gem 'web-console', '~> 2.0', group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -45,6 +45,8 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   gem 'pry'
+  gem 'spring'
+  gem 'web-console', '~> 2.0'
 end
 
 group :production do
